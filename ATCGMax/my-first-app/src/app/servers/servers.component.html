@@ -1,3 +1,15 @@
-<app-server></app-server>
-<br>
-<app-server></app-server>
+<div id="container">
+  <label>Server Name</label>
+  <input type="text" class="form-control" />
+
+  <div>
+    <span><button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button></span>
+  </div>
+  <br>
+  <p>{{ serverCreationStatus }}</p>
+  <br>
+  <app-server></app-server>
+  <br>
+  <app-server></app-server>
+</div>
+
