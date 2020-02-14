@@ -32,6 +32,6 @@ ng g c servers
 
 Databinding | string interp | Property Binding
 
-
+Directives are Instructions in the DOM
 
 
