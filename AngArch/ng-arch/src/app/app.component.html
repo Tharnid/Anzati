@@ -1,0 +1,18 @@
+<!--<h1>Ang Arch</h1>
+
+ <ul>
+    <li routerLink="todos">Todos</li>
+    <li routerLink="users">Users</li>
+</ul> -->
+
+<mat-toolbar color="primary">
+    <span>Ang Arch</span>
+    <span class="spacer"></span>
+    <div>
+        <button mat-button [routerLink]="['/']">Home</button>
+        <button mat-button [routerLink]="['/todos']">Todos</button>
+        <button mat-button [routerLink]="['/users']">Users</button>
+    </div>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

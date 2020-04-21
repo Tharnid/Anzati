@@ -6,12 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  showSecret = false;
-  log = [];
-
-  onToggleDetails() {
-    this.showSecret = !this.showSecret;
-    // this.log.push(this.log.length);
-    this.log.push(new Date());
-  }
+  title = 'ng-arch';
 }
