@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
+Renaming local branches
+https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch
+
 ng s -o
 
 ng g c todos
