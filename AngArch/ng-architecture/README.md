@@ -10,6 +10,10 @@ ng s -o
 ng g c todos
 
 ng generate module users --route users --module app
+ng generate library ng-shared
+ng build ng-shared --watch
+
+
 
 ## Development server
 
