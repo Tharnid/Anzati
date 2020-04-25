@@ -1,5 +1,13 @@
 # NgArchitecture
 
+Container
+
+Smart and Fetches data
+
+Presentation
+
+Dumb and displays data
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 Renaming local branches
@@ -12,6 +20,7 @@ ng g c todos
 ng generate module users --route users --module app
 ng generate library ng-shared
 ng build ng-shared --watch
+ng generate component users/users-display
 
 
 
