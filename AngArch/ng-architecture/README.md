@@ -1,5 +1,18 @@
 # NgArchitecture
 
+RxJS Subject
+
+- Subject to Observable
+- Can multicast
+- Like EventEmitters
+
+RxJS BehaviorSubject
+
+- also observable
+
+- Subject all other observers will get recent value emitted
+- last emitted 
+
 Container
 
 Smart and Fetches data
@@ -21,6 +34,8 @@ ng generate module users --route users --module app
 ng generate library ng-shared
 ng build ng-shared --watch
 ng generate component users/users-display
+ng generate service data
+
 
 
 
