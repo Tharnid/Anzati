@@ -36,7 +36,8 @@ ng build ng-shared --watch
 ng generate component users/users-display
 ng generate service data
 
-
+ng generate pipe my-uppercase
+ng generate pipe users/my-uppercase -SkipTests=true
 
 
 ## Development server
