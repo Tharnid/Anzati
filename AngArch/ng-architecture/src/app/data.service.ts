@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
+import { tap, map} from 'rxjs/operators';
+
 const usersUrl = 'https://jsonplaceholder.typicode.com/users';
 
 @Injectable({
@@ -10,7 +13,16 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getUsers(){
-    return this.http.get(usersUrl);
+  getUsers() {
+    return this.http
+      .get(usersUrl)
+      .pipe(tap(data => console.log('from service: ', data)),
+      map(response => {
+        return {
+          users: response,
+        };
+      }),
+      // tap(data => console.log(data))
+      );
   }
 }
