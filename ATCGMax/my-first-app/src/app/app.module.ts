@@ -11,18 +11,21 @@ import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ServerComponent,
-    ServersComponent,
-    WarningAlertComponent,
-    SuccessAlertComponent
-  ],
+    declarations: [
+        AppComponent,
+        ServerComponent,
+        ServersComponent,
+        WarningAlertComponent,
+        SuccessAlertComponent
+    ],
     imports: [
         BrowserModule,
         FormsModule
     ],
-  providers: [],
-  bootstrap: [AppComponent]
+    providers: [],
+    exports: [
+        ServerComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c54d11ec-cc57-48ce-875d-d4a07bbb4de1" name="MeddlingDeveloper">
+        <fileTransfer rootFolder="/home/ACG" accessType="SFTP" host="167.172.140.20" port="22" sshConfigId="de302992-e9de-4a91-ad2e-9b4b3792ef81" sshConfig="root@167.172.140.20:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
