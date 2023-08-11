@@ -23,9 +23,10 @@ import {FormsModule} from '@angular/forms';
         FormsModule
     ],
     providers: [],
-    exports: [
-        ServerComponent
-    ],
+  exports: [
+    ServerComponent,
+    WarningAlertComponent
+  ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
