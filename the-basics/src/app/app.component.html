@@ -18,5 +18,18 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <ul class="list-unstyled">
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+  </ul>
+  <hr>
+  <label>Username</label>
+  <input type="text" class="form-control" [(ngModel)]="username">
+  <p>{{username}}</p>
+<!--  <button class="btn btn-primary" [disabled]="username === ''">Reset Username</button>-->
+  <button class="btn btn-primary" [disabled]="username === ''" (click)="username =''">Reset Username</button>
+</div>
 
 

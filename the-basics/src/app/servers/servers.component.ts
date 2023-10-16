@@ -9,12 +9,15 @@
 })
 export class ServersComponent {
   allowNewServer = false;
+  serverId = 10;
   serverCreationStatus = 'No server was created!';
-  serverName = 'Test Server';
+  serverName = 'Testserver';
   serverCreated = false;
   servers = ['Test Server', 'Test Server 2'];
+  serverStatus = 'offline';
 
   constructor() {
+    this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
     setTimeout(() => {
       this.allowNewServer = true;
     }, 2000);
@@ -24,5 +27,17 @@ export class ServersComponent {
     this.servers.push(this.serverName);
     this.serverCreated = true;
     this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
+  }
+
+  onUpdateServerName(event:    Event) {
+    this.serverName = (<HTMLInputElement>event.target).value;
+  }
+
+ getServerStatus() {
+    return this.serverStatus;
+ }
+
+  getColor() {
+    return this.serverStatus === 'online' ? 'green' : 'red';
   }
 }
